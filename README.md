@@ -12,7 +12,7 @@
 一套用于web开发的sdk，基于來疯公共平台。提供视频上传（浏览器插件），播放（flash）以及一些工具。
   
 ## SDK
-最新以及历史版本请访问[SDK release](https://github.com/crazybear/lcloud-sdk-js-release/releases)  
+最新以及历史版本请访问[SDK release](https://github.com/lcloud-sdk/lcloud-sdk-js-release/releases)  
   
 ## 下载播放器以及插件
 请访问[公共平台页面](#)  
