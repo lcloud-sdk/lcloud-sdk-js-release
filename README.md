@@ -1,4 +1,4 @@
-# 來疯直播平台 lclould-sdk-js  
+# 來疯直播平台 lcloud-sdk-js  
 > Javascript SDK  
 
 * SDK  
@@ -10,10 +10,10 @@
 
 ## 简介
 一套用于web开发的sdk，基于來疯公共平台。提供视频上传（浏览器插件），播放（flash）以及一些工具。
-  
+
 ## SDK
 最新以及历史版本请访问[SDK release](https://github.com/lcloud-sdk/lcloud-sdk-js-release/releases)  
-  
+
 ## 下载播放器以及插件
 请访问[公共平台页面](#)  
 或联系我们  
@@ -44,8 +44,8 @@ json对象转换为字符串
 #### util.each(some, callback)
 ````some [Array|Object]````遍历some 用法参照jQuery.each
 #### util.jsonp(url, data, callback)
-提供基本的jsonp请求 
- 
+提供基本的jsonp请求
+
 ````javascript
 	liveIO.util.jsonp('some/api', {foo : 'foo'}, function(d){
 		console.log(d);
@@ -81,11 +81,11 @@ json对象转换为字符串
 * util.Listener.on(eventName, callback);
 * util.Listener.emit(eventName, parma ...);
 
-## 播放器 
+## 播放器
 
 ### liveIO.createPlayer(appId, replaceId, option)
 > extend util.Listener  
- 
+
 获取一个player实例
 
 * appId ````[String]```` 应用id
@@ -178,7 +178,7 @@ json对象转换为字符串
 
 ### liveIO.createPlugin(appId, replaceId, option)
 > extend util.Listener   
-> 由于Chrome 45 版本后 彻底废弃了NPAPI 插件 暂时无法在Chrome 45 以后的版本中运行 
+> 由于Chrome 45 版本后 彻底废弃了NPAPI 插件 暂时无法在Chrome 45 以后的版本中运行
 
 获取一个player实例
 
@@ -207,11 +207,11 @@ json对象转换为字符串
   * text ````[String]```` 插件传递信息
 * reportStatus 插件上报上传状态
   * clientInfo ````[Object]```` 用户信息
-  * dataInfo ````[Object]```` 插件信息 
+  * dataInfo ````[Object]```` 插件信息
 * error
   * code ````[Number]```` 请参照错误码小节
   * desc ````[String]```` 错误描述
-  
+
 ### plugin
 #### plugin.getVersion()
 返回插件版本号
@@ -242,10 +242,10 @@ json对象转换为字符串
 停止
 
 #### plugin.startPreview() plugin.stopPreview()
-打开关闭预览 
+打开关闭预览
 >在关闭预览时，如果在上传中，会停止上传  
 >一般不会用到这两个方法，因为setDevices 会自动打开预览 stopLive也会关闭预览
-  
+
 ### 错误码
 * 5000 没有安装插件 通过 getVersion 来判断的
 * 5001 初始化失败
@@ -296,13 +296,3 @@ json对象转换为字符串
     //初始化插件
     plugin.launch();
 ````
-
-
-
-
-
-
-
-
-
-
